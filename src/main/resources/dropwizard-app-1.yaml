@@ -1,0 +1,15 @@
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      threshold: ALL
+      logFormat: '%-5p [%d] %t [%mdc] %c: %m%n%rEx'
+
+server:
+  applicationConnectors:
+  - type: http
+    port: 9340
+  adminConnectors:
+  - type: http
+    port: 9341
+
